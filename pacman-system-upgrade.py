@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import os, subprocess
+import os, sys, subprocess
 
 if (os.getuid() != 0):
     print("script requires elevated privileges!")
