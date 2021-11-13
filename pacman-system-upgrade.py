@@ -24,3 +24,6 @@ net_check = subprocess.Popen(
 if net_check.wait() != 0:
     print("system does not have network connectivity!")
     sys.exit(1)
+
+def sec_start():
+    print("\n----------\n\n")
