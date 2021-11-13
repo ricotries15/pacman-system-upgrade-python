@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 
-import os, sys, subprocess
+import sys
+
+if sys.version_info[0] < 3:
+    sys.exit("script requires python version 3 or newer!")
+
+import os, subprocess
 
 if os.getuid() != 0:
     print("script requires elevated privileges!")
